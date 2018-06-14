@@ -27,8 +27,8 @@ subprojects {
             url 'http://oss.sonatype.org/content/repositories/snapshots'
         }
 
-        ext.mainClassName = 'planner.bootstrap.SchoolFinder'
-        ext.configFile = 'src/main/resources/schoolFinder.yml'
+        ext.mainClassName = 'school.bootstrap.SchoolFinderApplication'
+        ext.configFile = 'src/main/resources/school.yml'
 
     }
 
@@ -37,7 +37,7 @@ subprojects {
         exclude 'META-INF/*.DSA'
         exclude 'META-INF/*.RSA'
         manifest {
-            attributes 'Main-Class': 'planner.bootstrap.SchoolFinder'
+            attributes 'Main-Class': 'school.bootstrap.SchoolFinderApplication'
         }
     }
 
